@@ -1,0 +1,10 @@
+package com.intita.dao;
+
+/**
+ * @author Dmitriy Pyasetskiy
+ */
+
+public class TestUserDAOImpl 
+{
+
+}

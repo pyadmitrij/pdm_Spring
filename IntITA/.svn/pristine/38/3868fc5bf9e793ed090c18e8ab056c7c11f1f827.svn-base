@@ -1,0 +1,6 @@
+package com.intita.dao;
+
+public class TestUserDAOImpl 
+{
+
+}
