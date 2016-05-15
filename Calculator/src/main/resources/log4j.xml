@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.home.web">
+	<logger name="home.pdm.web">
 		<level value="info" />
 	</logger>
 	
