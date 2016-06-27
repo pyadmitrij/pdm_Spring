@@ -1,0 +1,12 @@
+#home
+{
+    background: -webkit-linear-gradient(top, rgba(255, 236, 175, 1) 0%,
+    rgba(255, 192, 3, 1) 100%);
+    color: #093;
+    top: 2px;
+    left: 2px;
+}
+
+center {
+    color: green;
+}
