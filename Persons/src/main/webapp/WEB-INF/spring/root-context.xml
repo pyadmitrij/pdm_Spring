@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd" >
+
+    <!-- Root Context: defines shared resources visible to all other controllers components -->
+    <!-- Включаем опцию использования конфигурационных аннотаций (@Annotation-based
+        configuration) -->
+    <context:annotation-config />
+
+    <!-- Файл с настройками ресурсов для работы с данными (Data Access Resources) -->
+    <import resource="data.xml" />
+    <import resource="security.xml" />
+
+    <!-- Определяем папки, в которых будем автоматически искать бины-компоненты
+        (@Component, @Service, @Repository) -->
+    <context:component-scan base-package="home.pdm.controllers" />
+    <context:component-scan base-package="home.pdm.service" />
+    <context:component-scan base-package="home.pdm.dao" />
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="5242880"/><!--5MB-->
+    </bean>
+
+</beans>
