@@ -1,0 +1,21 @@
+.button {
+    background-color: #6ddfff;
+
+    border-radius: 10px;
+    width: 125px;
+    height: 25px;
+
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    border: 2px solid blue;
+    cursor: pointer;
+
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.button:hover {
+    background-color: yellow;
+    color: blue;
+}

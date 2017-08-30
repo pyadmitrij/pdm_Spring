@@ -1,0 +1,27 @@
+group 'home.pdm'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+
+    compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
+    compile 'org.springframework:spring-tx:4.3.1.RELEASE'
+    compile 'org.springframework:spring-orm:4.3.1.RELEASE'
+    compile 'org.hibernate:hibernate-core:5.2.1.Final'
+    compile 'mysql:mysql-connector-java:5.1.35'
+    compile 'ch.qos.logback:logback-classic:1.1.7'
+    compile 'com.mchange:c3p0:0.9.5.2'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.1'
+    testCompile 'junit:junit:4.11'
+
+}

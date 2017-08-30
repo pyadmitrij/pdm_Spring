@@ -1,0 +1,19 @@
+#home {
+    background: -webkit-linear-gradient(top, rgb(243, 255, 89) 0%,
+    rgba(255, 192, 3, 1) 100%);
+    color: blue;
+    top: 2px;
+    left: 2px;
+}
+
+center {
+    color: blue;
+}
+
+#text {
+    color: orange;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
